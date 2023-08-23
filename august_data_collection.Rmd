@@ -1,0 +1,38 @@
+---
+title: "August Data Collection Pt. 2"
+author: "Anna Matthei and Gabriel Yossick"
+date: "8/23/2023"
+output:
+  html_document:
+    theme: readable 
+    highlight: espresso
+    df_print: paged
+  pdf_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+# Set knitr options
+knitr::opts_chunk$set()
+# Load required packages
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(infer))
+suppressPackageStartupMessages(library(modelr))
+suppressPackageStartupMessages(library(broom))
+suppressPackageStartupMessages(library(tidyr))
+suppressPackageStartupMessages(library(knitr))
+suppressPackageStartupMessages(library(tinytex))
+# Read in dataframes
+corruption <- read.csv('Corruption_Index.csv')
+GHS_Index <- read.csv('2021_GHS_Index.csv')
+global_slavery <- read.csv('Global_Slavery_Index.csv')
+global_transplants <- read.csv('GODT_Global_Kidney_Transplant.csv')
+healthcare <- read.csv('Healthcare_Ranking.csv')
+poverty_gap <- read.csv('OECD_Poverty_Gap.csv')
+poverty_rate <- read.csv('OECD_Poverty_Rate.csv')
+organized_crime <- read.csv('Organized_Crime_Index.csv')
+surgeon_workforce <- read.csv('Surgeon_Workforce.csv')
+gini_index <- read.csv('WB_Gini_Index.csv')
+```
+
+
