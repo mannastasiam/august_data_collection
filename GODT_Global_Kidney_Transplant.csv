@@ -1,0 +1,271 @@
+region,country,year,population,deceased_kidney_donors,live_kidney_donors,total_kidney_donors
+Europe,Austria,2020,9,291.0,44.0,335.0
+Europe,Belgium,2020,11.6,326.0,37.0,363.0
+Europe,Bulgaria,2020,6.9,2.0,6.0,8.0
+Europe,Croatia,2020,4.1,95.0,3.0,98.0
+Europe,Denmark,2020,5.8,200.0,78.0,278.0
+Europe,Estonia,2020,1.3,43.0,4.0,47.0
+Europe,Finland,2020,5.5,232.0,31.0,263.0
+Europe,Germany,2020,83.8,1459.0,450.0,1909.0
+Europe,Hungary,2020,9.7,172.0,30.0,202.0
+Europe,Latvia,2020,1.9,38.0,3.0,41.0
+Europe,Lithuania,2020,2.7,79.0,3.0,82.0
+Europe,Luxembourg,2020,0.6,,,
+Europe,Malta,2020,0.4,4.0,0.0,4.0
+Europe,Netherlands,2020,17.1,442.0,367.0,809.0
+Europe,Slovenia,2020,2.1,46.0,1.0,47.0
+Europe,Sweden,2020,10.1,313.0,116.0,429.0
+Europe,United Kingdom,2020,67.9,2009.0,558.0,2567.0
+Europe,Spain,2020,46.8,2443.0,259.0,2702.0
+Europe,Armenia,2020,3,0.0,10.0,10.0
+Europe,Georgia,2020,4,0.0,17.0,17.0
+Europe,Iceland,2020,0.3,3.0,7.0,10.0
+Europe,Israel,2020,8.7,124.0,273.0,397.0
+Europe,Republic of North Macedonia,2020,2.1,4.0,8.0,12.0
+Europe,Norway,2020,5.4,181.0,59.0,240.0
+America,United States of America,2020,331,18410.0,5234.0,23644.0
+America,Costa Rica,2020,5.1,33.0,8.0,41.0
+America,Dominican Republic,2020,10.8,8.0,20.0,28.0
+America,Paraguay,2020,7.1,1.0,3.0,4.0
+Europe,Belarus,2020,9.4,315.0,1.0,316.0
+Europe,Ukraine,2020,43.7,20.0,79.0,99.0
+Europe,Italy,2020,60.5,1623.0,284.0,1907.0
+Europe,Poland,2020,37.8,720.0,31.0,751.0
+Europe,Portugal,2020,10.2,353.0,41.0,394.0
+Europe,Republic of Moldova,2020,4,2.0,1.0,3.0
+America,Argentina,2020,45.2,724.0,130.0,854.0
+America,Panama,2020,4.3,6.0,7.0,13.0
+America,Uruguay,2020,3.5,112.0,8.0,120.0
+Europe,Czech Republic,2020,10.7,415.0,28.0,443.0
+America,Mexico,2020,128.9,283.0,630.0,913.0
+Europe,France,2020,65.3,2205.0,390.0,2595.0
+Europe,Cyprus,2020,1.2,5.0,8.0,13.0
+America,El Salvador,2020,6.5,0.0,11.0,11.0
+Europe,Greece,2020,10.4,86.0,89.0,175.0
+America,Brazil,2020,212.6,4385.0,445.0,4830.0
+America,Peru,2020,33,29.0,20.0,49.0
+Western Pacific,Australia,2020,25.5,704.0,181.0,885.0
+Europe,Bosnia and Herzegovina,2020,3.3,2.0,2.0,4.0
+Western Pacific,New Zealand,2020,4.8,100.0,87.0,187.0
+Europe,Serbia,2020,8.7,6.0,0.0,6.0
+Europe,Switzerland,2020,8.7,217.0,79.0,296.0
+Europe,Turkey,2020,84.3,249.0,2249.0,2498.0
+Europe,Romania,2020,19.2,120.0,54.0,174.0
+Europe,Slovakia,2020,5.5,113.0,18.0,131.0
+America,Venezuela (Bolivarian Republic of),2020,28.4,0.0,3.0,3.0
+America,Ecuador,2020,17.6,51.0,6.0,57.0
+Europe,Russian Federation,2020,145.9,967.0,157.0,1124.0
+Europe,Ireland,2020,4.9,95.0,28.0,123.0
+Europe,Albania,2020,2.9,0.0,7.0,7.0
+South-East Asia,Bangladesh,2020,164.7,0.0,155.0,155.0
+Africa,Kenya,2020,53.8,0.0,142.0,142.0
+Eastern Mediterranean,Kuwait,2020,4.3,24.0,37.0,61.0
+Western Pacific,Mongolia,2020,3.3,6.0,23.0,29.0
+Africa,Algeria,2020,43.9,0.0,91.0,91.0
+Eastern Mediterranean,Oman,2020,5.1,0.0,0.0,0.0
+Eastern Mediterranean,Pakistan,2020,220.9,0.0,129.0,129.0
+Eastern Mediterranean,Qatar,2020,2.9,4.0,13.0,17.0
+Eastern Mediterranean,Sudan,2020,43.8,0.0,139.0,139.0
+Western Pacific,China,2020,"1,447.40",9399.0,1638.0,11037.0
+Eastern Mediterranean,Syrian Arab Republic,2020,17.5,0.0,211.0,211.0
+America,Trinidad and Tobago,2020,1.4,4.0,6.0,10.0
+Eastern Mediterranean,United Arab Emirates,2020,9.9,16.0,45.0,61.0
+Africa,Ethiopia,2020,115,0.0,8.0,8.0
+South-East Asia,Thailand,2020,69.8,578.0,134.0,712.0
+Western Pacific,Malaysia,2020,32.4,41.0,112.0,153.0
+Western Pacific,Japan,2020,126.5,141.0,1556.0,1697.0
+America,Bolivia (Plurinational State of),2020,11.7,0.0,10.0,10.0
+America,Cuba,2020,11.3,55.0,9.0,64.0
+America,Guatemala,2020,17.9,0.0,29.0,29.0
+Eastern Mediterranean,Saudi Arabia,2020,34.8,70.0,477.0,547.0
+Eastern Mediterranean,Iran (Islamic Republic of),2020,84,820.0,420.0,1240.0
+America,Colombia,2020,50.9,406.0,120.0,526.0
+America,Canada,2020,37.7,1122.0,396.0,1518.0
+South-East Asia,India,2020,"1,380.00",516.0,4970.0,5486.0
+America,Chile,2020,19.1,212.0,21.0,233.0
+Africa,Nigeria,2020,206.1,0.0,164.0,164.0
+Africa,United Republic of Tanzania,2020,59.7,0.0,8.0,8.0
+Western Pacific,Singapore,2020,5.9,15.0,31.0,46.0
+Western Pacific,Republic of Korea,2020,51.3,848.0,1432.0,2280.0
+South-East Asia,Sri Lanka,2020,21.4,98.0,210.0,308.0
+Eastern Mediterranean,Jordan,2020,10.2,1.0,101.0,102.0
+Eastern Mediterranean,Morocco,2020,36.9,5.0,8.0,13.0
+Western Pacific,Philippines,2020,109.6,12.0,120.0,132.0
+Europe,Kazakhstan,2020,18.8,4.0,73.0,77.0
+Europe,Monaco,2020,0,0.0,0.0,0.0
+Western Pacific,Malaysia,2021,32.8,15.0,63.0,78.0
+Eastern Mediterranean,Kuwait,2021,4.3,39.0,48.0,87.0
+Western Pacific,Mongolia,2021,3.3,8.0,14.0,22.0
+South-East Asia,Bangladesh,2021,166.3,0.0,228.0,228.0
+Africa,Kenya,2021,55,0.0,160.0,160.0
+America,Chile,2021,19.2,192.0,54.0,246.0
+America,Costa Rica,2021,5.1,16.0,14.0,30.0
+America,Dominican Republic,2021,11,16.0,29.0,45.0
+America,El Salvador,2021,6.5,0.0,27.0,27.0
+America,Honduras,2021,10.1,0.0,1.0,1.0
+America,Mexico,2021,130.3,475.0,1499.0,1974.0
+America,Paraguay,2021,7.2,24.0,9.0,33.0
+America,Uruguay,2021,3.5,78.0,14.0,92.0
+Europe,Armenia,2021,3,0.0,16.0,16.0
+Europe,Belarus,2021,9.4,328.0,8.0,336.0
+Eastern Mediterranean,Oman,2021,5.2,0.0,0.0,0.0
+Eastern Mediterranean,Qatar,2021,2.9,17.0,31.0,48.0
+America,Trinidad and Tobago,2021,1.4,0.0,3.0,3.0
+Europe,Georgia,2021,4,0.0,22.0,22.0
+Europe,Iceland,2021,0.3,7.0,2.0,9.0
+Europe,Israel,2021,8.8,149.0,327.0,476.0
+Europe,Republic of Moldova,2021,4,0.0,0.0,0.0
+Western Pacific,China,2021,"1,452.50",9577.0,2462.0,12039.0
+Eastern Mediterranean,Saudi Arabia,2021,35.3,91.0,953.0,1044.0
+Eastern Mediterranean,Syrian Arab Republic,2021,18.3,0.0,315.0,315.0
+South-East Asia,Thailand,2021,70,351.0,81.0,432.0
+Eastern Mediterranean,United Arab Emirates,2021,10,66.0,64.0,130.0
+Europe,Norway,2021,5.5,164.0,67.0,231.0
+Europe,Serbia,2021,8.7,5.0,0.0,5.0
+Europe,Switzerland,2021,8.7,240.0,122.0,362.0
+America,United States of America,2021,332.9,19519.0,5971.0,25490.0
+America,Argentina,2021,45.6,1016.0,221.0,1237.0
+America,Brazil,2021,214,4222.0,337.0,4559.0
+Europe,Germany,2021,83.9,1517.0,475.0,1992.0
+Europe,Austria,2021,9,264.0,42.0,306.0
+Europe,Belgium,2021,11.6,358.0,59.0,417.0
+Europe,Bulgaria,2021,6.9,19.0,14.0,33.0
+Europe,Cyprus,2021,1.2,9.0,10.0,19.0
+Europe,Estonia,2021,1.3,45.0,3.0,48.0
+Europe,Finland,2021,5.5,222.0,46.0,268.0
+Europe,France,2021,65.4,2750.0,502.0,3252.0
+Europe,Greece,2021,10.4,84.0,91.0,175.0
+Europe,Hungary,2021,9.6,160.0,34.0,194.0
+Europe,Ireland,2021,5,104.0,35.0,139.0
+Europe,Latvia,2021,1.9,26.0,2.0,28.0
+Europe,Lithuania,2021,2.7,94.0,8.0,102.0
+Europe,Luxembourg,2021,0.6,,,
+Europe,Malta,2021,0.4,3.0,0.0,3.0
+Europe,Poland,2021,37.8,726.0,44.0,770.0
+Europe,Portugal,2021,10.2,393.0,36.0,429.0
+Europe,Netherlands,2021,17.2,464.0,452.0,916.0
+Europe,Romania,2021,19.1,88.0,68.0,156.0
+Europe,Sweden,2021,10.2,327.0,118.0,445.0
+Europe,United Kingdom,2021,68.2,2184.0,733.0,2917.0
+Europe,Croatia,2021,4.1,119.0,5.0,124.0
+Europe,Czech Republic,2021,10.7,414.0,42.0,456.0
+Europe,Denmark,2021,5.8,184.0,68.0,252.0
+Europe,Slovakia,2021,5.5,97.0,18.0,115.0
+Europe,Slovenia,2021,2.1,51.0,1.0,52.0
+Europe,Spain,2021,46.7,2627.0,323.0,2950.0
+Western Pacific,Japan,2021,126.1,125.0,1647.0,1772.0
+Europe,Italy,2021,60.4,1702.0,341.0,2043.0
+Western Pacific,Australia,2021,25.8,656.0,202.0,858.0
+Europe,Bosnia and Herzegovina,2021,3.3,2.0,8.0,10.0
+America,Canada,2021,38.1,1171.0,502.0,1673.0
+Western Pacific,New Zealand,2021,4.9,102.0,85.0,187.0
+Europe,Turkey,2021,85,298.0,3077.0,3375.0
+America,Bolivia (Plurinational State of),2021,11.8,0.0,35.0,35.0
+Eastern Mediterranean,Pakistan,2021,225.2,0.0,1003.0,1003.0
+Eastern Mediterranean,Iran (Islamic Republic of),2021,85,1095.0,682.0,1777.0
+America,Colombia,2021,51.3,478.0,145.0,623.0
+Eastern Mediterranean,Sudan,2021,44.9,0.0,205.0,205.0
+America,Cuba,2021,11.3,0.0,0.0,0.0
+Europe,Kazakhstan,2021,19,5.0,124.0,129.0
+America,Ecuador,2021,17.9,77.0,10.0,87.0
+America,Panama,2021,4.4,0.0,8.0,8.0
+America,Guatemala,2021,18.2,2.0,15.0,17.0
+Africa,Ethiopia,2021,117.9,0.0,0.0,0.0
+South-East Asia,India,2021,"1,393.40",830.0,8275.0,9105.0
+America,Peru,2021,33.4,31.0,18.0,49.0
+Europe,Albania,2021,2.9,,21.0,21.0
+Western Pacific,Singapore,2021,5.9,24.0,47.0,71.0
+America,Jamaica,2021,3,,0.0,0.0
+Eastern Mediterranean,Libyan Arab Jamahiriya,2021,7,0.0,7.0,7.0
+Western Pacific,Philippines,2021,111,6.0,256.0,262.0
+Eastern Mediterranean,Jordan,2021,10.3,4.0,197.0,201.0
+South-East Asia,Sri Lanka,2021,21.5,66.0,172.0,238.0
+Eastern Mediterranean,Morocco,2021,37.3,0.0,12.0,12.0
+America,Nicaragua,2021,6.7,0.0,3.0,3.0
+Africa,Nigeria,2021,211.4,0.0,199.0,199.0
+Western Pacific,Republic of Korea,2021,51.3,747.0,1480.0,2227.0
+Eastern Mediterranean,Qatar,2022,3,16.0,37.0,53.0
+South-East Asia,Thailand,2022,70.1,547.0,175.0,722.0
+Eastern Mediterranean,Oman,2022,5.3,2.0,9.0,11.0
+Europe,Albania,2022,2.9,0.0,13.0,13.0
+America,Jamaica,2022,3,0.0,2.0,2.0
+Western Pacific,Japan,2022,125.6,198.0,1458.0,1656.0
+Western Pacific,Mongolia,2022,3.4,4.0,36.0,40.0
+Eastern Mediterranean,Saudi Arabia,2022,35.8,138.0,1022.0,1160.0
+Eastern Mediterranean,Syrian Arab Republic,2022,19.4,0.0,329.0,329.0
+South-East Asia,Bangladesh,2022,167.9,0.0,269.0,269.0
+Africa,Ethiopia,2022,120.8,0.0,9.0,9.0
+Europe,Kazakhstan,2022,19.2,7.0,169.0,176.0
+Western Pacific,China,2022,"1,456.80",10187.0,2525.0,12712.0
+Eastern Mediterranean,Kuwait,2022,4.4,49.0,50.0,99.0
+Africa,Kenya,2022,56.2,0.0,55.0,55.0
+Europe,Germany,2022,83.9,1431.0,535.0,1966.0
+Europe,Belgium,2022,11.7,423.0,55.0,478.0
+Europe,Bulgaria,2022,6.8,11.0,1.0,12.0
+Europe,Cyprus,2022,1.2,8.0,8.0,16.0
+Europe,Croatia,2022,4.1,102.0,10.0,112.0
+Europe,Denmark,2022,5.8,164.0,78.0,242.0
+Europe,Estonia,2022,1.3,30.0,4.0,34.0
+Europe,Finland,2022,5.6,208.0,42.0,250.0
+Europe,France,2022,65.6,2863.0,514.0,3377.0
+Europe,Hungary,2022,9.6,190.0,56.0,246.0
+Europe,Ireland,2022,5,130.0,33.0,163.0
+Europe,Italy,2022,60.3,1697.0,336.0,2033.0
+Europe,Luxembourg,2022,0.6,0.0,0.0,0.0
+Europe,Netherlands,2022,17.2,492.0,516.0,1008.0
+Europe,Poland,2022,37.7,801.0,73.0,874.0
+Europe,Czech Republic,2022,10.7,480.0,40.0,520.0
+Europe,Slovenia,2022,2.1,51.0,2.0,53.0
+Europe,Spain,2022,46.7,3054.0,350.0,3404.0
+Europe,Sweden,2022,10.2,366.0,99.0,465.0
+Europe,Austria,2022,9.1,281.0,55.0,336.0
+Europe,Georgia,2022,4,0.0,34.0,34.0
+Europe,Iceland,2022,0.3,5.0,3.0,8.0
+Europe,Republic of Moldova,2022,4,3.0,0.0,3.0
+Europe,Norway,2022,5.5,186.0,43.0,229.0
+Europe,Serbia,2022,8.7,2.0,16.0,18.0
+Europe,United Kingdom,2022,68.5,2338.0,854.0,3192.0
+Europe,Armenia,2022,3,0.0,22.0,22.0
+Eastern Mediterranean,Afghanistan,2022,40.8,0.0,132.0,132.0
+America,Brazil,2022,215.4,4611.0,418.0,5029.0
+America,Chile,2022,19.3,253.0,73.0,326.0
+America,Costa Rica,2022,5.2,37.0,29.0,66.0
+America,Dominican Republic,2022,11.1,19.0,42.0,61.0
+America,El Salvador,2022,6.6,0.0,35.0,35.0
+America,Ecuador,2022,18.1,149.0,2.0,151.0
+America,Mexico,2022,131.6,725.0,1988.0,2713.0
+America,Panama,2022,4.4,18.0,17.0,35.0
+America,Paraguay,2022,7.3,26.0,6.0,32.0
+America,Colombia,2022,51.5,607.0,234.0,841.0
+America,Uruguay,2022,3.5,143.0,7.0,150.0
+America,Argentina,2022,46,1175.0,259.0,1434.0
+Europe,Romania,2022,19,157.0,73.0,230.0
+Europe,Israel,2022,8.9,149.0,319.0,468.0
+America,Barbados,2022,0.3,0.0,1.0,1.0
+Eastern Mediterranean,Libyan Arab Jamahiriya,2022,7,0.0,18.0,18.0
+Africa,Nigeria,2022,216.7,0.0,222.0,222.0
+Eastern Mediterranean,Pakistan,2022,229.5,0.0,1709.0,1709.0
+Western Pacific,Philippines,2022,112.5,37.0,553.0,590.0
+Western Pacific,Republic of Korea,2022,51.3,677.0,1357.0,2034.0
+Eastern Mediterranean,Tunisia,2022,12,32.0,39.0,71.0
+Europe,Greece,2022,10.3,104.0,83.0,187.0
+Europe,Latvia,2022,1.8,40.0,3.0,43.0
+Europe,Lithuania,2022,2.7,77.0,5.0,82.0
+Europe,Malta,2022,0.4,10.0,4.0,14.0
+Europe,Portugal,2022,10.1,437.0,58.0,495.0
+Europe,Slovakia,2022,5.5,124.0,30.0,154.0
+Western Pacific,Australia,2022,26.1,715.0,226.0,941.0
+Europe,Belarus,2022,9.4,343.0,5.0,348.0
+Europe,Bosnia and Herzegovina,2022,3.2,0.0,8.0,8.0
+America,Canada,2022,38.4,1310.0,485.0,1795.0
+Western Pacific,New Zealand,2022,4.9,104.0,70.0,174.0
+Europe,Switzerland,2022,8.8,231.0,111.0,342.0
+Europe,Turkey,2022,85.6,281.0,3340.0,3621.0
+America,United States of America,2022,334.8,20446.0,5864.0,26310.0
+Europe,Republic of North Macedonia,2022,2.1,10.0,12.0,22.0
+America,Bolivia (Plurinational State of),2022,12,0.0,50.0,50.0
+Eastern Mediterranean,Iran (Islamic Republic of),2022,86,1247.0,1184.0,2431.0
+America,Cuba,2022,11.3,5.0,6.0,11.0
+America,Honduras,2022,10.2,0.0,4.0,4.0
+America,Peru,2022,33.7,81.0,49.0,130.0
+America,Guatemala,2022,18.6,0.0,9.0,9.0
