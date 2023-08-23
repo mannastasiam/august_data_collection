@@ -37,4 +37,32 @@ working_poverty <- read.csv('Working_POverty_ILO.csv')
 # Read in Informal Supply Chain Data
 ```
 
+# Introduction
+
+This week we have added onto our demographics data, cleaned our formal/informal supply chain data, and did more qualitative research on kidney trafficking. Below we have listed our newly cleaned data, the additions to demographics, and our qualitative research. 
+
+# Formal Supply Chain Data
+
+Short intro on this data
+
+### Visas
+
+show info on visa csvs and links to original source
+
+### Foregin Direct Investments (FDI)
+
+show info on FDI csvs and links to original source
+
+# Informal Supply Chain Data
+
+Short intro on this data
+
+### flora/fauna trafficking
+
+info and link
+
+# Qualitative Research
+
+More information on kidney trafficking through reports and case studies. Add links and screenshots
+
 
