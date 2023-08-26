@@ -40,9 +40,20 @@ outwork <- read.csv("ILO_outside_workforce.csv")
 skill <- read.csv("ILO_skill_level.csv")
 trade_agreements <- readxl::read_xlsx("ILO_trade_agreements.xlsx")
 unemploy <- read.csv("ILO_unemployment.csv")
-
+WB_FDI <- read.csv("WB_FDI.csv")
+OECD_FDI <- readxl::read_xlsx("OECD_FDI.xlsx")
 
 # Read in Informal Supply Chain Data
+
+#checkbox
+
+checkbox <- function(id, label) {
+  shiny::tagList(
+    shiny::checkboxInput(id, label = NULL),
+    shiny::tags$label(label, `for` = id)
+  )
+}
+checkbox1 <- checkbox("Keep?", "Keep?")
 ```
 
 # Introduction
@@ -57,52 +68,88 @@ The following data includes new data collect this week, but also some cleaned da
 The following are different datasets from the IMF that might be useful for the study:
 
 [Balance of Payments](https://data.imf.org/?sk=7a51304b-6426-40c0-83dd-ca473ca1fd52)
-The balance of payments is a statistical statement that summarizes transactions between residents and nonresidents during a period. It consists of the goods and services account, the primary income 
+The balance of payments is a statistical statement that summarizes transactions between residents and nonresidents during a period. It consists of the goods and services account, the primary income account, the secondary income account, the capital account, and the financial account. File is too big to attach to this document.
 
-Labor migration
+
+##Labor migration
 The following is the cleaned dataset for the various ILO labor migration datasets.
 
-Inflow of working age foreign citizens by sex and country of citizenship
+**Inflow of working age foreign citizens by sex and country of citizenship**
 ```{r}
 print(colnames(sexcountry))
+checkbox1
 ```
 The data on the inflow of working-age foreign citizens allows us to identify regions or countries that are more likely to be sources of potential kidney donors.
 
-Inflow of worker-age population by education and sex
+**Inflow of worker-age population by education and sex**
 ```{r}
 print(colnames(edu))
+checkbox1
 ```
 Data on education level of incoming working migrants. This level of data might be useful to see patterns on education and kidney divulgence within the scope of the project. Includes all levels of education, which provides high utility.
 
-Inflow of employed foreign-born by occupation
+**Inflow of employed foreign-born by occupation**
 ```{r}
 print(colnames(skill))
+checkbox1
 ```
 Shows country of destination and national’s homestate.
 
-Outflow of nationals
+**Outflow of nationals**
 ```{r}
 print(colnames(outdest))
+checkbox1
 ```
 Data on the number of people working and living outside of society might be useful for predicting which and how many groups of people might be susceptible to organ trafficking.
 
-Persons outside the workforce
+**Persons outside the workforce**
 ```{r}
 print(colnames(outwork))
+checkbox1
 ```
 Data on the number of people working and living outside of society might be useful for predicting which and how many groups of people might be susceptible to organ trafficking.
 
-Unemployment % sex, education, citizenship
+**Unemployment % sex, education, citizenship**
 ```{r}
 print(colnames(unemploy))
+checkbox1
 ```
 Unemployment data might be indicative of possible susceptive populations. It can show domestic workforce strength, which might influence worker reliance on donating kidneys. 
 
-Trade agreement dataset
+**Trade agreement dataset**
 ```{r}
 print(colnames(trade_agreements))
+checkbox1
 ```
 Labor provisions in trade agreements.
+
+**Eurostat International Trade Data**
+The following is the available eurstat data relating to international trade:
+1) Services trade by broad economic categories (BEC Rev.5) 
+```{r}
+checkbox1
+```
+
+2)Services trade by enterprise characteristics (STEC) by NACE Rev.2 activities and enterprise size class (ext_stec01)
+```{r}
+checkbox1
+```
+
+3)Services trade by enterprise characteristics (STEC) by EBOPS 2010 items and NACE Rev.2 activities (ext_stec02)
+```{r}
+checkbox1
+```
+
+4)Services trade by enterprise characteristics (STEC) by NACE Rev.2 activities and type of ownership (ext_stec03)
+```{r}
+
+```
+
+5)International supply of services by modes, type of product (EBOPS 2010) and partner country (ext_ser_mos)
+```{r}
+checkbox1
+```
+
 
 ### Visas
 
@@ -110,7 +157,20 @@ show info on visa csvs and links to original source
 
 ### Foregin Direct Investments (FDI)
 
-show info on FDI csvs and links to original source
+World Bank FDI Dataset
+```{r}
+WB_FDI2 <- pivot_longer(WB_FDI, starts_with("x"), 
+                        names_to = "year",
+                        values_to = "value")
+print(colnames(WB_FDI2))
+checkbox1
+```
+OECD FDI Dataset
+```{r}
+print(colnames(OECD_FDI))
+##this data will suck to clean
+checkbox1
+```
 
 # Informal Supply Chain Data
 
