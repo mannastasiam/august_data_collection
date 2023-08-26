@@ -69,6 +69,57 @@ The following are different datasets from the IMF that might be useful for the s
 
 [Balance of Payments](https://data.imf.org/?sk=7a51304b-6426-40c0-83dd-ca473ca1fd52)
 The balance of payments is a statistical statement that summarizes transactions between residents and nonresidents during a period. It consists of the goods and services account, the primary income account, the secondary income account, the capital account, and the financial account. File is too big to attach to this document.
+```{r}
+checkbox1
+```
+
+[Commodity Terms of Trade](https://data.imf.org/?sk=2cddccb8-0b59-43e9-b6a0-59210d5605d2)
+Country-specific commodity price indices, including export, import, and terms-of-trade indices. For each country, the change in the international price of up to 45 individual commodities is weighted using commodity-level trade data. Coverage includes 182 countries. Goes back to 1980.
+```{r}
+checkbox1
+```
+
+[Consumer Price Index (CPI)](https://data.imf.org/?sk=4ffb52b2-3653-409a-b471-d47b46d904b5)
+Index numbers that measure changes in the prices of goods and services purchased or otherwise acquired by households, which households use directly, or indirectly, to satisfy their own needs and wants.This data was collected by the IMF and OECD.
+```{r}
+checkbox1
+```
+
+[Coordinated Direct Investment Survey(CDIS)](https://data.imf.org/?sk=40313609-F037-48C1-84B1-E1F1CE54D6D5)
+The CDIS database presents detailed data on "inward" direct investment positions (i.e., direct investment into the reporting economy) cross-classified by economy of immediate investor, and data on "outward" direct investment positions (i.e., direct investment abroad by the reporting economy) cross-classified by economy of immediate investment. 
+```{r}
+checkbox1
+```
+
+[Coordinated Portfolio Investment Survey (CPIS)](https://data.imf.org/?sk=B981B4E3-4E58-467E-9B90-9DE0C3367363)
+The CPIS is a voluntary data collection exercise conducted under the auspices of the IMF. An economy provides data on its holdings of portfolio investment securities (data are separately requested for equity and investment fund shares, long-term debt intruments, and short-term debt instruments).
+```{r}
+checkbox1
+```
+
+[Direction of Trade Statistics (DOTS)](https://data.imf.org/?sk=9d6028d4-f14a-464c-a2f2-59b2cd424b85)
+DOTS presents the value of merchandise exports and imports disaggregated according to a country's primary trading partners. Area and world aggregates are includes in the display of trade flows between major areas of the world. Reported data is supplemented by estimates whenever such data is not available or current. 
+```{r}
+checkbox1
+```
+
+[Export Diversification and Quality](https://data.imf.org/?sk=a093df7d-e0b8-4913-80e0-a07cf90b44db)
+Includes time series information. 
+```{r}
+checkbox1
+```
+
+[Financial Access Survey (FAS)](https://data.imf.org/?sk=388dfa60-1d26-4ade-b505-a05a558d9a42&sid=1479329132316)
+Cibtaubs 180 time series and 65 indicators that are expressed as rations to GDPp, land area, or adult population to facilitate cross-economy comparisons. Provision of FAS data is voluntary.
+```{r}
+checkbox1
+```
+
+[Total Tariff Lines](https://wits.worldbank.org/CountryProfile/en/country/by-country/startyear/LTST/endyear/LTST/tradeFlow/Import/indicator/AHS-TTL-TRFF-LNS/partner/WLD/product/Total)
+A dataset that contains information about the total number of tariff lines for specific products categorized using the Harmonized System, and this data is presented by country, providing insights into the tariff treatment of various goods in international trade.
+```{r}
+checkbox1
+```
 
 
 ##Labor migration
@@ -122,34 +173,6 @@ print(colnames(trade_agreements))
 checkbox1
 ```
 Labor provisions in trade agreements.
-
-**Eurostat International Trade Data**
-The following is the available eurstat data relating to international trade:
-1) Services trade by broad economic categories (BEC Rev.5) 
-```{r}
-checkbox1
-```
-
-2)Services trade by enterprise characteristics (STEC) by NACE Rev.2 activities and enterprise size class (ext_stec01)
-```{r}
-checkbox1
-```
-
-3)Services trade by enterprise characteristics (STEC) by EBOPS 2010 items and NACE Rev.2 activities (ext_stec02)
-```{r}
-checkbox1
-```
-
-4)Services trade by enterprise characteristics (STEC) by NACE Rev.2 activities and type of ownership (ext_stec03)
-```{r}
-
-```
-
-5)International supply of services by modes, type of product (EBOPS 2010) and partner country (ext_ser_mos)
-```{r}
-checkbox1
-```
-
 
 ### Visas
 
