@@ -51,7 +51,58 @@ This week we have added onto our demographics data, cleaned our formal/informal 
 
 # Formal Supply Chain Data
 
-Short intro on this data
+The following data includes new data collect this week, but also some cleaned data sets from last week. We also have included numerous datasets from various databases that need to be confirmed on whether they are needed for the study. 
+
+[International Monetary Fund Data Page](https://data.imf.org/?sk=388dfa60-1d26-4ade-b505-a05a558d9a42&sid=1479329132316)
+The following are different datasets from the IMF that might be useful for the study:
+
+[Balance of Payments](https://data.imf.org/?sk=7a51304b-6426-40c0-83dd-ca473ca1fd52)
+The balance of payments is a statistical statement that summarizes transactions between residents and nonresidents during a period. It consists of the goods and services account, the primary income 
+
+Labor migration
+The following is the cleaned dataset for the various ILO labor migration datasets.
+
+Inflow of working age foreign citizens by sex and country of citizenship
+```{r}
+print(colnames(sexcountry))
+```
+The data on the inflow of working-age foreign citizens allows us to identify regions or countries that are more likely to be sources of potential kidney donors.
+
+Inflow of worker-age population by education and sex
+```{r}
+print(colnames(edu))
+```
+Data on education level of incoming working migrants. This level of data might be useful to see patterns on education and kidney divulgence within the scope of the project. Includes all levels of education, which provides high utility.
+
+Inflow of employed foreign-born by occupation
+```{r}
+print(colnames(skill))
+```
+Shows country of destination and national’s homestate.
+
+Outflow of nationals
+```{r}
+print(colnames(outdest))
+```
+Data on the number of people working and living outside of society might be useful for predicting which and how many groups of people might be susceptible to organ trafficking.
+
+Persons outside the workforce
+```{r}
+print(colnames(outwork))
+```
+Data on the number of people working and living outside of society might be useful for predicting which and how many groups of people might be susceptible to organ trafficking.
+
+Unemployment % sex, education, citizenship
+```{r}
+print(colnames(unemploy))
+```
+Unemployment data might be indicative of possible susceptive populations. It can show domestic workforce strength, which might influence worker reliance on donating kidneys. 
+
+Trade agreement dataset
+```{r}
+print(colnames(trade_agreements))
+```
+Labor provisions in trade agreements.
 
 ### Visas
 
@@ -72,7 +123,5 @@ info and link
 # Qualitative Research
 
 More information on kidney trafficking through reports and case studies. Add links and screenshots
-
-
 
 # Research Articles
