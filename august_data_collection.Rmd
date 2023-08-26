@@ -31,8 +31,16 @@ organized_crime <- read.csv('Organized_Crime_Index.csv')
 surgeon_workforce <- read.csv('Surgeon_Workforce.csv')
 gini_index <- read.csv('WB_Gini_Index.csv')
 working_poverty <- read.csv('Working_POverty_ILO.csv')
+
 # Read in Formal Supply Chain Data
-# Gabriel, this is all you! 
+sexcountry <- read.csv("ILO_inflows_sexcountry.csv")
+edu <- read.csv("ILO_education.csv")
+outdest <- read.csv("ILO_outflow_destination.csv")
+outwork <- read.csv("ILO_outside_workforce.csv")
+skill <- read.csv("ILO_skill_level.csv")
+trade_agreements <- readxl::read_xlsx("ILO_trade_agreements.xlsx")
+unemploy <- read.csv("ILO_unemployment.csv")
+
 
 # Read in Informal Supply Chain Data
 ```
@@ -66,3 +74,5 @@ info and link
 More information on kidney trafficking through reports and case studies. Add links and screenshots
 
 
+
+# Research Articles
