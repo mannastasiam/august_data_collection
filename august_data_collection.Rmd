@@ -42,7 +42,7 @@ trade_agreements <- readxl::read_xlsx("ILO_trade_agreements.xlsx")
 unemploy <- read.csv("ILO_unemployment.csv")
 WB_FDI <- read.csv("WB_FDI.csv")
 OECD_FDI <- readxl::read_xlsx("OECD_FDI.xlsx")
-
+UNCTAD_trade <- read.csv("UNCTAD_trade.csv")
 # Read in Informal Supply Chain Data
 
 #checkbox
@@ -122,6 +122,7 @@ checkbox1
 ```
 
 
+
 ##Labor migration
 The following is the cleaned dataset for the various ILO labor migration datasets.
 
@@ -173,6 +174,13 @@ print(colnames(trade_agreements))
 checkbox1
 ```
 Labor provisions in trade agreements.
+
+UNCTAD Relative Price of Exports to Imports
+```{r}
+print(colnames(UNCTAD_trade))
+checkbox1
+```
+
 
 ### Visas
 
