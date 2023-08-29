@@ -60,11 +60,30 @@ checkbox1 <- checkbox("Keep?", "Keep?")
 
 This week we have added onto our demographics data, cleaned our formal/informal supply chain data, and did more qualitative research on kidney trafficking. Below we have listed our newly cleaned data, the additions to demographics, and our qualitative research. 
 
+# Demographic Data
+
+
 # Formal Supply Chain Data
 
 The following data includes new data collect this week, but also some cleaned data sets from last week. We also have included numerous datasets from various databases that need to be confirmed on whether they are needed for the study. 
 
-[International Monetary Fund Data Page](https://data.imf.org/?sk=388dfa60-1d26-4ade-b505-a05a558d9a42&sid=1479329132316)
+[Interactive World Migration Report 2022](https://worldmigrationreport.iom.int/wmr-2022-interactive/)
+Graphics on international labor migration. Includes time series on movement restrictions (internal and international). Includes other bigger graphs not translatable for a screenshot.
+```{r}
+knitr::include_graphics("Remittances.png")
+knitr::include_graphics("COVIDclose.png")
+knitr::include_graphics("InternalRestrictions.png")
+knitr::include_graphics("TravelRestrictions.png")
+```
+[WTO Stats](https://stats.wto.org/dashboard/merchandise_en.html)
+```{r}
+knitr::include_graphics("WTO_merch.png")
+```
+
+[Internationa Trade Data OECD](https://www.oecd-ilibrary.org/trade/international-trade/indicator-group/english_20cce8d6-en)
+Includes data on trade in goods and services (and the forecasting of said items); current account balance(and forecast); exports by business size; terms; domestic value in gross exports
+
+##[International Monetary Fund Data Page](https://data.imf.org/?sk=388dfa60-1d26-4ade-b505-a05a558d9a42&sid=1479329132316)
 The following are different datasets from the IMF that might be useful for the study:
 
 [Balance of Payments](https://data.imf.org/?sk=7a51304b-6426-40c0-83dd-ca473ca1fd52)
@@ -115,13 +134,14 @@ Cibtaubs 180 time series and 65 indicators that are expressed as rations to GDPp
 checkbox1
 ```
 
+##[International Trade Indicators: Mechandise Trade](https://wits.worldbank.org/country-indicator.aspx)
+Website contains a vast amount of sheets. Later verification is needed.
+
 [Total Tariff Lines](https://wits.worldbank.org/CountryProfile/en/country/by-country/startyear/LTST/endyear/LTST/tradeFlow/Import/indicator/AHS-TTL-TRFF-LNS/partner/WLD/product/Total)
 A dataset that contains information about the total number of tariff lines for specific products categorized using the Harmonized System, and this data is presented by country, providing insights into the tariff treatment of various goods in international trade.
 ```{r}
 checkbox1
 ```
-
-
 
 ##Labor migration
 The following is the cleaned dataset for the various ILO labor migration datasets.
@@ -166,7 +186,7 @@ Data on the number of people working and living outside of society might be usef
 print(colnames(unemploy))
 checkbox1
 ```
-Unemployment data might be indicative of possible susceptive populations. It can show domestic workforce strength, which might influence worker reliance on donating kidneys. 
+Unemployment data might be indicative of possible susceptible populations. It can show domestic workforce strength, which might influence worker reliance on donating kidneys. 
 
 **Trade agreement dataset**
 ```{r}
@@ -213,6 +233,13 @@ info and link
 
 # Qualitative Research
 
-More information on kidney trafficking through reports and case studies. Add links and screenshots
+[Human Trafficking for Organ Removal in India](http://cofs.org/home/wp-content/uploads/2012/06/COFS-India-Report-on-HTOR-on-15th-Feb-2014.pdf)
+A study conducted by an NGO looked at organ trafficking victims in private hospitals. They estimate thousands are victims within India, and identified around 1,000 who claim they are victims, but they only interviewed around 153 victims. They did a medical follow up with 133 of these victims. 22% of cases occurred from 2009-2012.
 
-# Research Articles
+```{r}
+knitr::include_graphics("india1.png")
+knitr::include_graphics("reasonsale.png")
+```
+
+[UNODC Trafficking in Persons for the Purpose of Organ Removal](https://www.unodc.org/documents/human-trafficking/2015/UNODC_Assessment_Toolkit_TIP_for_the_Purpose_of_Organ_Removal.pdf)
+Not really relevant directly to the research project, but this UNODC report (2015) is a UN report on organ removal and essentially the document focuses on creating an overview on what organ removal and trafficking is and looks like, with an ultimate recommendation to the reader on how to assess the response to trafficking and removal within a country through research and interviews.
