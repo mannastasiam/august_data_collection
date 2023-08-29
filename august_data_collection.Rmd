@@ -4,7 +4,7 @@ author: "Anna Matthei and Gabriel Yossick"
 date: "8/23/2023"
 output:
   html_document:
-    theme: readable 
+    theme: flatly 
     highlight: espresso
     df_print: paged
   pdf_document: default
@@ -22,6 +22,7 @@ suppressPackageStartupMessages(library(broom))
 suppressPackageStartupMessages(library(tidyr))
 suppressPackageStartupMessages(library(knitr))
 suppressPackageStartupMessages(library(tinytex))
+suppressPackageStartupMessages(library(shiny))
 # Read in demographics
 global_slavery <- read.csv('Global_Slavery_Index.csv')
 global_transplants <- read.csv('GODT_Global_Kidney_Transplant.csv')
@@ -45,15 +46,6 @@ OECD_FDI <- readxl::read_xlsx("OECD_FDI.xlsx")
 UNCTAD_trade <- read.csv("UNCTAD_trade.csv")
 # Read in Informal Supply Chain Data
 
-#checkbox
-
-checkbox <- function(id, label) {
-  shiny::tagList(
-    shiny::checkboxInput(id, label = NULL),
-    shiny::tags$label(label, `for` = id)
-  )
-}
-checkbox1 <- checkbox("Keep?", "Keep?")
 ```
 
 # Introduction
@@ -67,7 +59,7 @@ This week we have added onto our demographics data, cleaned our formal/informal 
 
 The following data includes new data collect this week, but also some cleaned data sets from last week. We also have included numerous datasets from various databases that need to be confirmed on whether they are needed for the study. 
 
-[Interactive World Migration Report 2022](https://worldmigrationreport.iom.int/wmr-2022-interactive/)
+### [Interactive World Migration Report 2022](https://worldmigrationreport.iom.int/wmr-2022-interactive/)
 Graphics on international labor migration. Includes time series on movement restrictions (internal and international). Includes other bigger graphs not translatable for a screenshot.
 ```{r}
 knitr::include_graphics("Remittances.png")
@@ -80,158 +72,170 @@ knitr::include_graphics("TravelRestrictions.png")
 knitr::include_graphics("WTO_merch.png")
 ```
 
-[Internationa Trade Data OECD](https://www.oecd-ilibrary.org/trade/international-trade/indicator-group/english_20cce8d6-en)
+### [Internationa Trade Data OECD](https://www.oecd-ilibrary.org/trade/international-trade/indicator-group/english_20cce8d6-en)
 Includes data on trade in goods and services (and the forecasting of said items); current account balance(and forecast); exports by business size; terms; domestic value in gross exports
 
-##[International Monetary Fund Data Page](https://data.imf.org/?sk=388dfa60-1d26-4ade-b505-a05a558d9a42&sid=1479329132316)
+### [International Monetary Fund Data Page](https://data.imf.org/?sk=388dfa60-1d26-4ade-b505-a05a558d9a42&sid=1479329132316)
 The following are different datasets from the IMF that might be useful for the study:
 
 [Balance of Payments](https://data.imf.org/?sk=7a51304b-6426-40c0-83dd-ca473ca1fd52)
 The balance of payments is a statistical statement that summarizes transactions between residents and nonresidents during a period. It consists of the goods and services account, the primary income account, the secondary income account, the capital account, and the financial account. File is too big to attach to this document.
-```{r}
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
-
 [Commodity Terms of Trade](https://data.imf.org/?sk=2cddccb8-0b59-43e9-b6a0-59210d5605d2)
 Country-specific commodity price indices, including export, import, and terms-of-trade indices. For each country, the change in the international price of up to 45 individual commodities is weighted using commodity-level trade data. Coverage includes 182 countries. Goes back to 1980.
-```{r}
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
 
 [Consumer Price Index (CPI)](https://data.imf.org/?sk=4ffb52b2-3653-409a-b471-d47b46d904b5)
 Index numbers that measure changes in the prices of goods and services purchased or otherwise acquired by households, which households use directly, or indirectly, to satisfy their own needs and wants.This data was collected by the IMF and OECD.
-```{r}
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
 
 [Coordinated Direct Investment Survey(CDIS)](https://data.imf.org/?sk=40313609-F037-48C1-84B1-E1F1CE54D6D5)
 The CDIS database presents detailed data on "inward" direct investment positions (i.e., direct investment into the reporting economy) cross-classified by economy of immediate investor, and data on "outward" direct investment positions (i.e., direct investment abroad by the reporting economy) cross-classified by economy of immediate investment. 
-```{r}
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
 
 [Coordinated Portfolio Investment Survey (CPIS)](https://data.imf.org/?sk=B981B4E3-4E58-467E-9B90-9DE0C3367363)
 The CPIS is a voluntary data collection exercise conducted under the auspices of the IMF. An economy provides data on its holdings of portfolio investment securities (data are separately requested for equity and investment fund shares, long-term debt intruments, and short-term debt instruments).
-```{r}
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
 
 [Direction of Trade Statistics (DOTS)](https://data.imf.org/?sk=9d6028d4-f14a-464c-a2f2-59b2cd424b85)
 DOTS presents the value of merchandise exports and imports disaggregated according to a country's primary trading partners. Area and world aggregates are includes in the display of trade flows between major areas of the world. Reported data is supplemented by estimates whenever such data is not available or current. 
-```{r}
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
 
 [Export Diversification and Quality](https://data.imf.org/?sk=a093df7d-e0b8-4913-80e0-a07cf90b44db)
 Includes time series information. 
-```{r}
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
 
 [Financial Access Survey (FAS)](https://data.imf.org/?sk=388dfa60-1d26-4ade-b505-a05a558d9a42&sid=1479329132316)
 Cibtaubs 180 time series and 65 indicators that are expressed as rations to GDPp, land area, or adult population to facilitate cross-economy comparisons. Provision of FAS data is voluntary.
-```{r}
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
 
-##[International Trade Indicators: Mechandise Trade](https://wits.worldbank.org/country-indicator.aspx)
+### [International Trade Indicators: Mechandise Trade](https://wits.worldbank.org/country-indicator.aspx)
 Website contains a vast amount of sheets. Later verification is needed.
 
 [Total Tariff Lines](https://wits.worldbank.org/CountryProfile/en/country/by-country/startyear/LTST/endyear/LTST/tradeFlow/Import/indicator/AHS-TTL-TRFF-LNS/partner/WLD/product/Total)
+
 A dataset that contains information about the total number of tariff lines for specific products categorized using the Harmonized System, and this data is presented by country, providing insights into the tariff treatment of various goods in international trade.
-```{r}
-checkbox1
+
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
 
-##Labor migration
+### Labor migration
 The following is the cleaned dataset for the various ILO labor migration datasets.
 
 **Inflow of working age foreign citizens by sex and country of citizenship**
-```{r}
-print(colnames(sexcountry))
-checkbox1
-```
+
 The data on the inflow of working-age foreign citizens allows us to identify regions or countries that are more likely to be sources of potential kidney donors.
 
-**Inflow of worker-age population by education and sex**
-```{r}
-print(colnames(edu))
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
+
+**Inflow of worker-age population by education and sex**
+
 Data on education level of incoming working migrants. This level of data might be useful to see patterns on education and kidney divulgence within the scope of the project. Includes all levels of education, which provides high utility.
 
-**Inflow of employed foreign-born by occupation**
-```{r}
-print(colnames(skill))
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
+
+**Inflow of employed foreign-born by occupation**
+
 Shows country of destination and national’s homestate.
 
-**Outflow of nationals**
-```{r}
-print(colnames(outdest))
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
+
+**Outflow of nationals**
+
 Data on the number of people working and living outside of society might be useful for predicting which and how many groups of people might be susceptible to organ trafficking.
 
-**Persons outside the workforce**
-```{r}
-print(colnames(outwork))
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
+
+**Persons outside the workforce**
+
 Data on the number of people working and living outside of society might be useful for predicting which and how many groups of people might be susceptible to organ trafficking.
+
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
+```
 
 **Unemployment % sex, education, citizenship**
 ```{r}
 print(colnames(unemploy))
-checkbox1
 ```
+
 Unemployment data might be indicative of possible susceptible populations. It can show domestic workforce strength, which might influence worker reliance on donating kidneys. 
+
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
+```
 
 **Trade agreement dataset**
 ```{r}
 print(colnames(trade_agreements))
-checkbox1
 ```
+
 Labor provisions in trade agreements.
 
-UNCTAD Relative Price of Exports to Imports
-```{r}
-print(colnames(UNCTAD_trade))
-checkbox1
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
 ```
 
 
-### Visas
+### UNCTAD Relative Price of Exports to Imports
+```{r}
+print(colnames(UNCTAD_trade))
+```
 
-show info on visa csvs and links to original source
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
+```
 
-### Foregin Direct Investments (FDI)
+# Foregin Direct Investments (FDI)
 
-World Bank FDI Dataset
+### World Bank FDI Dataset
 ```{r}
 WB_FDI2 <- pivot_longer(WB_FDI, starts_with("x"), 
                         names_to = "year",
                         values_to = "value")
 print(colnames(WB_FDI2))
-checkbox1
 ```
-OECD FDI Dataset
+
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
+```
+
+### OECD FDI Dataset
+
 ```{r}
 print(colnames(OECD_FDI))
-##this data will suck to clean
-checkbox1
 ```
 
-# Informal Supply Chain Data
+```{r, echo=FALSE, results='asis'}
+cat('<div style="margin-top: 10px;"><input type="checkbox" style="vertical-align: middle;"> <strong>include?</strong></div><br>')
+```
 
-Short intro on this data
-
-### flora/fauna trafficking
-
-info and link
-
-# Qualitative Research
+# More on Kidneys
 
 [Human Trafficking for Organ Removal in India](http://cofs.org/home/wp-content/uploads/2012/06/COFS-India-Report-on-HTOR-on-15th-Feb-2014.pdf)
 A study conducted by an NGO looked at organ trafficking victims in private hospitals. They estimate thousands are victims within India, and identified around 1,000 who claim they are victims, but they only interviewed around 153 victims. They did a medical follow up with 133 of these victims. 22% of cases occurred from 2009-2012.
